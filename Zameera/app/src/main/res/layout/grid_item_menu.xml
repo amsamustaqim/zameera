@@ -12,20 +12,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/iv_other_image_catalogue"
-            android:layout_width="wrap_content"
+            android:id="@+id/iv_other_image_grid"
+            android:layout_width="140dp"
             android:src="@drawable/item_catalogue_detail"
-            android:layout_height="wrap_content"/>
+            android:layout_height="230dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_other_image_catalogue"
-            android:id="@+id/tv_price_item_detail"
-            android:text="Rp. 250.000"/>
+            android:layout_below="@id/iv_other_image_grid"
+            android:id="@+id/tv_price_item_grid"
+            android:text="Rp. 250.000"
+            android:textSize="14sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_price_item_detail"
-            android:text="Malaka"/>
+            android:layout_below="@id/tv_price_item_grid"
+            android:text="Malaka"
+            android:id="@+id/tv_name_item_grid"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="210"
+            android:textSize="14sp"
+            android:gravity="bottom"
+            android:layout_toRightOf="@+id/tv_price_item_grid"
+            android:layout_toEndOf="@+id/tv_price_item_grid"
+            android:layout_alignBottom="@+id/tv_name_item_grid"
+            android:layout_alignRight="@+id/iv_other_image_grid"
+        android:layout_alignEnd="@+id/iv_other_image_grid"
+            android:drawableRight="@drawable/ic_favorite_border_cyan_a200_24dp"
+            android:textColor="#00e4fe"/>
     </RelativeLayout>
 </LinearLayout>
