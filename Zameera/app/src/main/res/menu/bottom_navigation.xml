@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_home_white_48dp"
+        android:id="@+id/itm_btn_menu_home"
+        android:title="home"/>
+    <item android:icon="@drawable/zameeralogoputih"
+        android:id="@+id/btn_menu_zameera"
+        android:title="zameera"/>
+    <item android:icon="@drawable/ic_camera_white_48dp"
+        android:id="@+id/itm_btn_menu_camera"
+        android:title="camera"/>
+    <item android:icon="@drawable/ic_search_white_48dp"
+        android:id="@+id/itm_btn_menu_search"
+        android:title="search"/>
+    <item android:icon="@drawable/zameerapinputih"
+        android:id="@+id/itm_btn_menu_pin"
+        android:title="menu"/>
+</menu>

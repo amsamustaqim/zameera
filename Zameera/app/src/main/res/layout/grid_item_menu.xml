@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+    android:id="@+id/layout_item_grid_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/iv_other_image_grid"
+            android:id="@+id/iv_item_image_grid"
             android:layout_width="140dp"
-            android:src="@drawable/item_catalogue_detail"
+            tools:src="@drawable/item1"
             android:layout_height="230dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_other_image_grid"
+            android:layout_below="@id/iv_item_image_grid"
             android:id="@+id/tv_price_item_grid"
             android:text="Rp. 250.000"
             android:textSize="14sp"/>
@@ -27,22 +26,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_price_item_grid"
-            android:text="Malaka"
+            android:text="Strawberry Hijab"
             android:id="@+id/tv_name_item_grid"
             android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/iv_heart_item_grid"
+            android:src="@drawable/zameeralove"
+            android:layout_below="@+id/tv_name_item_grid"
+            android:layout_alignEnd="@+id/iv_item_image_grid"
+            />
+
         <TextView
+            android:layout_toStartOf="@+id/iv_heart_item_grid"
+            android:layout_alignBottom="@+id/iv_heart_item_grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
+            android:layout_marginEnd="4dp"
             android:text="210"
             android:textSize="14sp"
-            android:gravity="bottom"
-            android:layout_toRightOf="@+id/tv_price_item_grid"
-            android:layout_toEndOf="@+id/tv_price_item_grid"
-            android:layout_alignBottom="@+id/tv_name_item_grid"
-            android:layout_alignRight="@+id/iv_other_image_grid"
-        android:layout_alignEnd="@+id/iv_other_image_grid"
-            android:drawableRight="@drawable/ic_favorite_border_cyan_a200_24dp"
+            android:id="@+id/tv_item_grid_likes"
             android:textColor="#00e4fe"/>
-    </RelativeLayout>
-</LinearLayout>
+
+</RelativeLayout>

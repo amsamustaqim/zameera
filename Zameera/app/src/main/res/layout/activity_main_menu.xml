@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
+                 android:id="@+id/layout_activity_home"
               android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -9,7 +10,7 @@
         android:id="@+id/topbar_menu"
         android:background="@color/colorPrimary">
         <ImageView
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -22,30 +23,71 @@
             android:layout_height="wrap_content"
             android:src="@drawable/zameerasort"
             android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
           />
     </RelativeLayout>
 
-    <fragment
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar_menu"
+        android:id="@+id/rv_fragment_catalogue"></android.support.v7.widget.RecyclerView>
+<!--    <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:name="com.example.adrian.zameera.Fragment.CatalogueMenuFragment"
         android:id="@+id/fragment"
         android:layout_below="@+id/topbar_menu"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        tools:layout="@layout/fragment_menu_gridview"/>
+        tools:layout="@layout/fragment_menu_gridview"/>-->
 
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/btm_bar_menu"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-       android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
-
-    </RelativeLayout>
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:weightSum="1.25"
+        android:orientation="horizontal">
+        <ImageView
+            android:src="@drawable/ic_home_white_48dp"
+            android:id="@+id/btn_menu_home"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/zameeralogoputih"
+            android:id="@+id/btn_menu_zameera"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.25"
+          />
+        <ImageView
+            android:src="@drawable/ic_camera_white_48dp"
+            android:id="@+id/btn_menu_camera"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/ic_search_white_48dp"
+            android:id="@+id/btn_menu_search"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/zameerapinputih"
+            android:id="@+id/btn_menu_pin"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:layout_width="38dp"
+            android:layout_height="38dp"/>
+    </LinearLayout>
 
 
 </RelativeLayout>
