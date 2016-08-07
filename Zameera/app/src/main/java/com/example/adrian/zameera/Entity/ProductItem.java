@@ -9,13 +9,13 @@ public class ProductItem {
 
     String name;
     int itemNumber;
-    int price;
-    int likes;
+    String price;
+    String likes;
 
     public ProductItem() {
     }
 
-    public ProductItem(String name, int price, int likes, int itemNumber) {
+    public ProductItem(String name, String price, String likes, int itemNumber) {
         this.name = name;
         this.price = price;
         this.likes = likes;
@@ -30,19 +30,19 @@ public class ProductItem {
         this.name = name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public int getLikes() {
+    public String getLikes() {
         return likes;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes(String likes) {
         this.likes = likes;
     }
 

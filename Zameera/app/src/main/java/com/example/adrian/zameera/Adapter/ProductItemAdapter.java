@@ -39,7 +39,7 @@ public class ProductItemAdapter extends RecyclerView.Adapter<ProductItemAdapter.
         int price = (int) Math.random()*200000 + 50000;
         mProductList = new ArrayList<>();
         for(int i = 1; i <= 6; i++) {
-            ProductItem itm = new ProductItem(names[i],price , likes, i);
+            ProductItem itm = new ProductItem(names[i],String.valueOf(price) , String.valueOf(likes), i);
             mProductList.add(itm);
         }
     }

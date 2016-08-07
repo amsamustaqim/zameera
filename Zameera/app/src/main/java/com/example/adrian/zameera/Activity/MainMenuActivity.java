@@ -1,14 +1,17 @@
 package com.example.adrian.zameera.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.adrian.zameera.Adapter.ProductItemAdapter;
 import com.example.adrian.zameera.R;
+import com.example.adrian.zameera.RecyclerItemClickListener;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
 
@@ -34,6 +37,17 @@ public class MainMenuActivity extends FragmentActivity {
         mRecyclerViewCatalogue.setLayoutManager(new GridLayoutManager(this, 2));
         mRecyclerViewCatalogue.setAdapter(new ProductItemAdapter(this));
 
+        mRecyclerViewCatalogue.addOnItemTouchListener(new RecyclerItemClickListener(this, mRecyclerViewCatalogue,new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent myIntent = new Intent(MainMenuActivity.this, ItemDetailActivity.class);
+                startActivity(myIntent);
+            }
+
+            @Override public void onLongItemClick(View view, int position) {
+                // do whatever
+            }
+        }));
 
         // Set the color for the active tab. Ignored on mobile when there are more than three tabs.
         // Use the dark theme. Ignored on mobile when there are more than three tabs.
