@@ -17,6 +17,7 @@ import com.roughike.bottombar.OnMenuTabSelectedListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Adrian on 8/1/2016.
@@ -24,6 +25,7 @@ import butterknife.ButterKnife;
 public class MainMenuActivity extends FragmentActivity {
 
     @BindView(R.id.rv_fragment_catalogue)RecyclerView mRecyclerViewCatalogue;
+    @BindView(R.id.btm_bar_menu) LinearLayout mLinearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,12 @@ public class MainMenuActivity extends FragmentActivity {
         // custom text appearance, set the text appearance first.
         //bottomBar.setTypeFace("MyFont.ttf");
 
+    }
+
+    @OnClick(R.id.btm_bar_menu)
+    void start() {
+        Intent myIntent = new Intent(MainMenuActivity.this, ActivityCategory.class);
+        startActivity(myIntent);
     }
 
 

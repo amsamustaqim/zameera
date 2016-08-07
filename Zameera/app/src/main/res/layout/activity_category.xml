@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="CATEGORIES"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_keyboard_arrow_right_white_48dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="PERSONALITY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="ELEGANT"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="GOING TO"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="WEDDING PARTY"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="BODY SHAPE"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="1dp"
+            android:alpha="0.4"
+            android:id="@+id/divider"
+            android:background="@android:color/black"
+            />
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOP (85)"
+            android:layout_below="@+id/divider"
+            android:layout_alignStart="@+id/divider"
+            android:textSize="24sp"
+            android:id="@+id/main_category"
+            />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/main_category"
+                android:layout_alignStart="@id/main_category"
+                android:layout_marginLeft="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="T-SHIRT (20)"
+                    android:layout_below="@+id/divider"
+                    android:layout_alignStart="@+id/divider"
+                    android:textSize="24sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MANSET (9)"
+                    android:layout_below="@+id/divider"
+                    android:layout_alignStart="@+id/divider"
+                    android:textSize="24sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SWEATER (8)"
+                    android:layout_below="@+id/divider"
+                    android:layout_alignStart="@+id/divider"
+                    android:textSize="24sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SHIRT (19)"
+                    android:layout_below="@+id/divider"
+                    android:layout_alignStart="@+id/divider"
+                    android:textSize="24sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BLOUSE (17)"
+                    android:layout_below="@+id/divider"
+                    android:layout_alignStart="@+id/divider"
+                    android:textSize="24sp"
+                    />
+            </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

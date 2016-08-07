@@ -3,7 +3,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             xmlns:tools="http://schemas.android.com/tools"
-            android:orientation="vertical">
+            android:orientation="vertical"
+    android:background="@android:color/white">
     <RelativeLayout
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
@@ -24,6 +25,7 @@
             android:layout_below="@+id/iv_1"
             android:layout_alignStart="@+id/iv_1"
             android:src="@drawable/item2"
+            android:layout_margin="4dp"
             android:id="@+id/iv_2"/>
 
         <RelativeLayout
@@ -37,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rp. 250.000"
+                android:textSize="16sp"
                 android:id="@+id/tv_price"/>
 
             <TextView
@@ -44,13 +47,15 @@
                 android:layout_below="@id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Malaka"/>
+                android:text="Malaka"
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/tv_percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="60%"
+                android:textSize="14sp"
                 android:layout_alignParentEnd="true"/>
 
             <TextView
@@ -58,6 +63,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="210"
+                android:textSize="16sp"
+                android:layout_alignBottom="@+id/tv_name"
+                android:gravity="bottom"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/tv_percent"
                 android:drawableRight="@drawable/ic_favorite_border_cyan_a200_24dp"/>
