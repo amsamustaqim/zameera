@@ -30,7 +30,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical">
         <TextView
@@ -48,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_marginTop="4dp"
             android:text="GOING TO"/>
         <TextView
             android:layout_width="wrap_content"
@@ -59,7 +60,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_marginTop="8dp"
             android:text="BODY SHAPE"/>
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:text="FACE SHAPE"/>
+        <View
+
+            android:id="@+id/category_circle_view"
+            android:layout_width="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            />
     </LinearLayout>
 
     <RelativeLayout
@@ -76,7 +98,7 @@
             />
 
 
-        <TextView
+        w<TextView
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

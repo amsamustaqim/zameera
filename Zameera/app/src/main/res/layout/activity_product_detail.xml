@@ -6,11 +6,37 @@
             android:orientation="vertical"
     android:background="@android:color/white">
     <RelativeLayout
-        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/topbar_menu"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/btn_menu_back"
+                android:src="@drawable/ic_list_white_48dp"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/btn_menu_pin"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zameerasort"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
         <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/topbar_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/item1"

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "283262208884",
+    "firebase_url": "https://zameera-30bba.firebaseio.com",
+    "project_id": "zameera-30bba",
+    "storage_bucket": "zameera-30bba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283262208884:android:ed3a5bed1d8defd1",
+        "android_client_info": {
+          "package_name": "com.example.adrian.zameera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283262208884-vc4d9efgsn6lbm0dak6uh92vbp4lk8k2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adrian.zameera",
+            "certificate_hash": "45201D044D4016F2702CA2B51159FA47566209E3"
+          }
+        },
+        {
+          "client_id": "283262208884-flu9ciut52f314uhk830s1dnv5co3r1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-dvC7mvHJpYhTHa60VEzoIbhk1j6J610"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283262208884-flu9ciut52f314uhk830s1dnv5co3r1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

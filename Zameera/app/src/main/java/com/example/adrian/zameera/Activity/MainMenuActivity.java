@@ -2,7 +2,6 @@ package com.example.adrian.zameera.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,8 +11,6 @@ import android.widget.LinearLayout;
 import com.example.adrian.zameera.Adapter.ProductItemAdapter;
 import com.example.adrian.zameera.R;
 import com.example.adrian.zameera.RecyclerItemClickListener;
-import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnMenuTabSelectedListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -66,9 +63,14 @@ public class MainMenuActivity extends FragmentActivity {
 
     @OnClick(R.id.btm_bar_menu)
     void start() {
-        Intent myIntent = new Intent(MainMenuActivity.this, ActivityCategory.class);
+        Intent myIntent = new Intent(MainMenuActivity.this, CategoryActivity.class);
         startActivity(myIntent);
     }
 
 
+    @OnClick(R.id.btn_menu_filter)
+    void selectCategory() {
+        Intent myIntent = new Intent(MainMenuActivity.this, CategoryActivity.class);
+        startActivityForResult(myIntent,100);
+    }
 }
