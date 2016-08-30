@@ -25,7 +25,7 @@ public class SplashScreenActivity extends Activity {
 
                 try {
                     //sleep thread for 10 seconds, time in milliseconds
-                    sleep(4000);
+                    sleep(2000);
 
                     //start new activity
                     Intent i=new Intent(SplashScreenActivity.this,LoginActivity.class);
