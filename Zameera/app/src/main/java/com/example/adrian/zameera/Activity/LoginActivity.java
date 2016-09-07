@@ -24,6 +24,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.storage.FirebaseStorage;
 
 /**
  * Created by Asus on 8/29/2016.
@@ -43,6 +44,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     // [START declare_auth_listener]
     private FirebaseAuth.AuthStateListener mAuthListener;
     // [END declare_auth_listener]
+
+    FirebaseStorage storage = FirebaseStorage.getInstance();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

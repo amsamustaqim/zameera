@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import com.example.adrian.zameera.Adapter.ProductItemAdapter;
 import com.example.adrian.zameera.R;
 import com.example.adrian.zameera.RecyclerItemClickListener;
+import com.google.firebase.database.DatabaseReference;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -23,6 +24,9 @@ public class MainMenuActivity extends FragmentActivity {
 
     @BindView(R.id.rv_fragment_catalogue)RecyclerView mRecyclerViewCatalogue;
     @BindView(R.id.btm_bar_menu) LinearLayout mLinearLayout;
+
+    private DatabaseReference mDataBase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
