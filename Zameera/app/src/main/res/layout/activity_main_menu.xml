@@ -14,12 +14,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:id="@+id/btn_menu_filter"
+            android:id="@+id/btn_menu_category"
             android:src="@drawable/ic_list_white_48dp"/>
 
 
         <ImageView
             android:layout_width="30dp"
+            android:id="@+id/btn_menu_sort"
             android:layout_height="wrap_content"
             android:src="@drawable/zameerasort"
             android:layout_centerVertical="true"
@@ -53,7 +54,7 @@
         android:weightSum="1.25"
         android:orientation="horizontal">
         <ImageView
-            android:src="@drawable/ic_home_white_48dp"
+            android:src="@drawable/ic_home_black_48dp"
             android:id="@+id/btn_menu_home"
             android:layout_weight="0.25"
             android:layout_width="wrap_content"

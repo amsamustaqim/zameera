@@ -26,6 +26,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.storage.FirebaseStorage;
 
+import butterknife.OnClick;
+
 /**
  * Created by Asus on 8/29/2016.
  */

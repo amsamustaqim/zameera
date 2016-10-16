@@ -65,16 +65,26 @@ public class MainMenuActivity extends FragmentActivity {
 
     }
 
-    @OnClick(R.id.btm_bar_menu)
+    @OnClick(R.id.btn_menu_category)
     void start() {
         Intent myIntent = new Intent(MainMenuActivity.this, CategoryActivity.class);
         startActivity(myIntent);
     }
 
+    @OnClick(R.id.btn_menu_camera)
+    void startCamera() {
+        Intent myIntent = new Intent(MainMenuActivity.this,CameraActivity.class);
+        startActivity(myIntent);
+    }
 
-    @OnClick(R.id.btn_menu_filter)
+    @OnClick(R.id.btn_menu_sort)
     void selectCategory() {
         Intent myIntent = new Intent(MainMenuActivity.this, CategoryActivity.class);
         startActivityForResult(myIntent,100);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

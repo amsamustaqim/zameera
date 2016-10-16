@@ -38,7 +38,7 @@ public class ItemDetailActivity extends AppCompatActivity {
         }
     }
 
-    @OnClick(R.id.btn_menu_filter)
+    @OnClick(R.id.btn_menu_sort)
     void selectCategory() {
         Intent myIntent = new Intent(ItemDetailActivity.this, CategoryActivity.class);
         startActivity(myIntent);
