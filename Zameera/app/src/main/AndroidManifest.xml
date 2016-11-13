@@ -32,10 +32,7 @@
         <activity android:name=".Activity.LoginActivity"
             android:label="Login"
            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"></action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
-            </intent-filter>
+
         </activity>
 
         <activity android:name=".Activity.CategoryActivity"
@@ -46,6 +43,14 @@
         <activity android:name=".Activity.CameraActivity"
             android:label="Camera">
 
+        </activity>
+
+        <activity android:name=".Activity.ScreenSlidePagerActivity"
+            android:label="View Pager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
         </activity>
 
     </application>
